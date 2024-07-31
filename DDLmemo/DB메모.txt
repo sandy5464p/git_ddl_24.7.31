@@ -1,0 +1,72 @@
+레거시 -> 오래된 프로젝트 
+Host : 오라클 서버 pc 
+Schemas : 정리 되어있는 표형태로 볼 수 있는것들 
+
+Cmd창 
+포린키 
+
+컨트롤 + 쉬프트 (+,-)
+컨트 + M  = 화면 확대 
+컨트롤 + /  = 범위 주석
+컨트롤 + 쉬프트 + 방향키 = 옮기기
+===========================================
+
+
+조합키 
+-PK를 설정할 때 컬럼을 2개 이상 설정 문법
+- 여러 개의 컬럼 조합으로 중복이 없는 경우 하나의 PK처럼 사용 할 수 있게 된다. 
+
+슈퍼키 
+- 기존 테이블의 PK를 FK로 받아온 뒤 그대로 PK 제약조건을 설정하는 기술
+	즉, FK를 PK로 설정한. 
+
+
+ALTER TABLE TBL_LIKE RENAME COLUMN LIKE_RECIEVER TO LIKE_RECEIVER; = 컬럼명 바꾸기 
+ALTER TABLE TBL_LIKE DROP CONSTRAINT FK_LIKE_MEMBER_RECIEVER; = FK 삭제 
+
+ALTER TABLE TBL_LIKE ADD = FK 설정 다시 
+CONSTRAINT FK_LIKE_MEMBER_RECEIVER FOREIGN KEY(LIKE_RECEIVER)
+REFERENCES TBL_MEMBER(ID);
+
+===========================================================
+
+프로젝트 생성 
+
+마우스 우클릭 Create열기
+Create Project 클릭
+프로젝트 이름 쓰기
+
+프로젝트 이름 클릭 -> Connections 잡고 마우스 우클릭
+Create 클릭 -> Connections 클릭 -> 오라클 클릭 
+오라클
+Basic클릭
+Database에 xe
+Username scott로 적기
+Pasword 1234
+ 
+프로젝트 잡고 cttl+ ]
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
